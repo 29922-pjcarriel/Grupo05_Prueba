@@ -1,6 +1,7 @@
 /* ========================================
    UNIVERSIDAD DE LAS FUERZAS ARMADAS - ESPE
    Interfaz adaptada con colores institucionales
+   Versión con navbar responsivo e inverso (Bootstrap 3)
    ======================================== */
 
 /* Fuente moderna y elegante */
@@ -104,39 +105,99 @@ h2 {
   max-width: 90%;
 }
 
-/* NAVBAR */
-#MenuBar{
+/* ======== NAVBAR (Bootstrap 3 inverso y responsivo) ======== */
+/* ======== NAVBAR (Bootstrap 3 inverso y responsivo gris) ======== */
+#MenuBar {
   position: absolute;
   left: 50px;
   top: 200px;
   width: 1260px;
-  height: 70px;
-  background-color: #009639;
-  border-radius: 10px;
-  border: 3px solid #006633;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 10px;
+  z-index: 10000;
+  border-radius: 6px;
+  overflow: visible;
 }
 
-#MenuBar a {
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 8px 14px;
+/* Fondo gris degradado */
+#MenuBar.navbar-inverse {
+  background: linear-gradient(to bottom, #3a3a3a, #1f1f1f);
+  border: 1px solid #111;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
+}
+
+/* Marca “Grupo 5” (no clicable) */
+#MenuBar .navbar-brand.no-link {
+  color: #dcdcdc !important;
+  font-weight: 700;
+  cursor: default;
+}
+
+/* Enlaces principales */
+#MenuBar .navbar-nav > li > a {
+  color: #e0e0e0 !important;
+  font-weight: 500;
+  font-size: 16px;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
-#MenuBar a:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: translateY(-2px);
+#MenuBar .navbar-nav > li > a:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+  transform: translateY(-1px);
 }
 
-/* LEFT MENU */
+/* Dropdown */
+#MenuBar .dropdown-menu {
+  background-color: #fff !important;
+  color: #000 !important;
+  border-radius: 6px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  z-index: 10001;
+}
+
+#MenuBar .dropdown-menu > li > a {
+  color: #000 !important;
+  font-weight: 500;
+}
+
+#MenuBar .dropdown-menu > li > a:hover {
+  background-color: #e6e6e6 !important;
+}
+
+/* Barra de búsqueda */
+#MenuBar .navbar-form {
+  margin-right: 10px;
+}
+
+#MenuBar .navbar-form .form-control {
+  border-radius: 4px;
+  width: 160px;
+  transition: width 0.3s ease;
+}
+
+#MenuBar .navbar-form .form-control:focus {
+  width: 200px;
+}
+
+#MenuBar .navbar-form .btn {
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 6px 12px;
+}
+
+#MenuBar .navbar-form .btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Corrige superposición */
+.navbar,
+.navbar-collapse,
+.dropdown-menu {
+  position: relative;
+  z-index: 9999 !important;
+}
+
+
+/* ======== LEFT MENU ======== */
 #leftMenu {
   position: absolute;
   left: 50px;
@@ -154,7 +215,7 @@ h2 {
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
-/* CONTENT */
+/* ======== CONTENT ======== */
 #content {
   position: absolute;
   left: 270px;
@@ -174,7 +235,7 @@ h2 {
   text-align: center;
 }
 
-/* RIGHT MENU */
+/* ======== RIGHT MENU ======== */
 #rightMenu {
   position: absolute;
   left: 890px;
@@ -199,7 +260,7 @@ h2 {
   pointer-events: none;
 }
 
-/* FOOTER */
+/* ======== FOOTER ======== */
 #footer {
   position: absolute;
   left: 50px;
@@ -228,15 +289,4 @@ h2 {
 #footer a:hover {
   background: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
-}
-.dropdown-menu {
-  background-color: white !important;
-  color: black !important;
-  z-index: 9999 !important;
-}
-.dropdown-menu > li > a {
-  color: black !important;
-}
-.dropdown-menu > li > a:hover {
-  background-color: #e6e6e6 !important;
 }

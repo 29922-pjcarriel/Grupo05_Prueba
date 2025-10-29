@@ -20,28 +20,55 @@
    </div>
 
 
-   <!-- navBar (Rectangle) -->
-   <div id="MenuBar" class="Texto">
-    <ul class="nav nav-tabs">
-      <li><a href="#">Docente</a></li>
-      <li><a href="#">Comandante</a></li>
+   <!-- NAVBAR ESTILO GRIS OSCURO -->
+   <nav id="MenuBar" class="navbar navbar-inverse navbar-static-top">
+      <div class="container-fluid">
 
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          Grupos <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Grupo 1</a></li>
-          <li><a href="#">Grupo 2</a></li>
-          <li><a href="#">Grupo 3</a></li>
-          <li><a href="#">Grupo 4</a></li>
-          <li><a href="#">Grupo 5</a></li>
-          <li><a href="#">Grupo 6</a></li>
-          <li><a href="#">Grupo 7</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
+         <!-- Botón hamburguesa (responsive) -->
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+
+            <!-- Título (no clicable) -->
+            <span class="navbar-brand no-link">Grupo 5</span>
+         </div>
+
+         <!-- Contenido del menú -->
+         <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="nav navbar-nav">
+               <li><a href="#">Docente</a></li>
+               <li><a href="#">Comandante</a></li>
+               <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                     Grupos <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                     <li><a href="#">Grupo 1</a></li>
+                     <li><a href="#">Grupo 2</a></li>
+                     <li><a href="#">Grupo 3</a></li>
+                     <li><a href="#">Grupo 4</a></li>
+                     <li><a href="#">Grupo 5</a></li>
+                     <li><a href="#">Grupo 6</a></li>
+                     <li><a href="#">Grupo 7</a></li>
+                  </ul>
+               </li>
+            </ul>
+
+            <!-- Barra de búsqueda -->
+            <form class="navbar-form navbar-right" role="search">
+               <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Buscar...">
+               </div>
+               <button type="submit" class="btn btn-primary">Buscar</button>
+            </form>
+         </div>
+      </div>
+   </nav>
+
+
 
 
    <!-- leftMenu (Rectangle) -->
@@ -55,7 +82,7 @@
    <div id="content" class="Texto" data-label="content">
       <h2>Aplicación de Tecnologías WEB</h2>
 
-      <p>Estudiantes: Pamela Carriel, Karla Molina, Josue Tapia/p>
+      <p>Estudiantes: Pamela Carriel, Karla Molina, Josue Tapia </p>
       <p>NRC: 29922</p>
       <p>Fecha: 30 de octubre del 2025</p>
 
@@ -81,8 +108,8 @@
    </div>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 
 </body>
