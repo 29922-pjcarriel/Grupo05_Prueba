@@ -259,39 +259,34 @@ p {
   border: 2px solid #00cc66;
 }
 
-#footer {
-  background-color: #009639;
-  border-radius: 10px;
-  border: 3px solid #006633;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  padding: 15px 0;
-}
 
 /* ======== FOOTER CON ICONOS SVG ======== */
 #footer {
-  background-color: #119d47;
-  border-radius: 10px;
-  border: 3px solid #006633;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #009639, #006633);
+  border-radius: 12px;
+  border: 2px solid #004d26;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  padding: 15px 0;
+  gap: 45px;
+  padding: 20px 0;
 }
 
 /* Íconos SVG */
 .social-icon {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  width: 42px;
+  height: 42px;
+  background-color: #ffffff; /* fondo blanco */
+  border-radius: 50%;
+  padding: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover animado */
 .social-icon:hover {
   transform: scale(1.2);
-  opacity: 0.8;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  background-color: #f0f0f0;
 }
