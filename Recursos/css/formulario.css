@@ -1,0 +1,69 @@
+/* Fuente y color general */
+body {
+  background-color: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Caja del formulario */
+.form-box {
+  background-color: #fff;
+  padding: 25px 30px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  border: 2px solid #e6e6e6;
+}
+
+/* Título principal */
+.form-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #e91e63;
+  margin-bottom: 25px;
+}
+
+/* Campos de texto */
+.input-group .form-control {
+  height: 40px;
+  font-size: 15px;
+}
+
+/* Panel de género */
+.seccion {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.seccion-heading {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+}
+
+/* Select de género */
+select.form-control {
+  width: 60%;
+  margin: 0 auto 15px;
+  text-align: center;
+}
+
+/* Botón guardar */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Checkbox */
+.checkbox label {
+  font-size: 14px;
+  color: #333;
+}

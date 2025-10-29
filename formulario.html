@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+
+  <!-- Bootstrap 3 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="Recursos/css/formulario.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+        <div class="form-box">
+          <h2 class="form-title">Formulario</h2>
+
+          <form>
+            <!-- Nombre -->
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="glyphicon glyphicon-user"></i>
+                </span>
+                <input type="text" class="form-control" placeholder="Ingrese el nombre...">
+              </div>
+            </div>
+
+            <!-- Usuario -->
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="glyphicon glyphicon-user"></i>
+                </span>
+                <input type="text" class="form-control" placeholder="Ingrese el usuario...">
+              </div>
+            </div>
+
+            <!-- Contraseña -->
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="glyphicon glyphicon-lock"></i>
+                </span>
+                <input type="password" class="form-control" placeholder="Ingrese la contraseña...">
+              </div>
+            </div>
+
+            <!-- Confirmar contraseña -->
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="glyphicon glyphicon-lock"></i>
+                </span>
+                <input type="password" class="form-control" placeholder="Confirme la contraseña...">
+              </div>
+            </div>
+
+            <!-- Sección Género -->
+            <div class="seccion panel panel-default">
+              <div class="panel-heading text-center">
+                <strong>Género</strong>
+              </div>
+              <div class="panel-body text-center">
+
+                <div class="form-group">
+                  <label for="genero">Seleccione su género:</label>
+                  <select id="genero" class="form-control">
+                    <option>--Seleccione--</option>
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                    <option>Lesbiana</option>
+                    <option>Gay</option>
+                    <option>Bisexual</option>
+                    <option>Transexual</option>
+                    <option>Intersexual</option>
+                  </select>
+                </div>
+
+                <div class="checkbox text-left">
+                  <label><input type="checkbox"> Recuérdame</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Guardar</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
