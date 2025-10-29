@@ -1,8 +1,4 @@
-/* ========================================
-   UNIVERSIDAD DE LAS FUERZAS ARMADAS - ESPE
-   Interfaz adaptada con Bootstrap 3 GRID SYSTEM
-   Autor: Stalin F. Roche Córdova
-   ======================================== */
+
 
 /* Fuente moderna y elegante */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
@@ -230,8 +226,9 @@ p {
   width: 100%;
   height: 290px;
   border: 2px solid #00cc66;
-  pointer-events: none;
 }
+
+
 
 /* ======== FOOTER ======== */
 #footer {
