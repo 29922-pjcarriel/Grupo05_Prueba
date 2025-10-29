@@ -1,7 +1,5 @@
-
-
 /* Fuente moderna y elegante */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 /* ======== General ======== */
 * {
@@ -10,14 +8,15 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: auto;
 }
 
 body {
   width: 100%;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   background: linear-gradient(135deg, #e8f5e9 0%, #f0fff0 100%);
   color: #1b1b1b;
@@ -71,19 +70,40 @@ p {
 /* Cajas generales */
 .box {
   border-radius: 10px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   padding: 20px;
   margin-bottom: 20px;
   border: 3px solid transparent;
 }
 
 /* Variantes de color */
-.white { background: #ffffff; border-color: #e8fff3; }
-.soft-green { background: #eafaf0; border-color: #006633; color: #004d26; }
-.dark-green { background: #00331a; border-color: #004d26; }
-.green { background: #009639; border-color: #006633; }
-.green a { color: white; font-weight: 600; font-size: 18px; text-decoration: none; }
-.green a:hover { background: rgba(255,255,255,0.25); border-radius: 6px; }
+.white {
+  background: #ffffff;
+  border-color: #e8fff3;
+}
+.soft-green {
+  background: #eafaf0;
+  border-color: #006633;
+  color: #004d26;
+}
+.dark-green {
+  background: #00331a;
+  border-color: #004d26;
+}
+.green {
+  background: #009639;
+  border-color: #006633;
+}
+.green a {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+}
+.green a:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 6px;
+}
 
 /* ======== HEADER ======== */
 #header {
@@ -190,7 +210,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 8px;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
@@ -228,9 +248,6 @@ p {
   border: 2px solid #00cc66;
 }
 
-
-
-/* ======== FOOTER ======== */
 #footer {
   background-color: #009639;
   border-radius: 10px;
@@ -239,22 +256,31 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  gap: 40px;
+  padding: 15px 0;
 }
 
-#footer a {
-  color: white;
-  font-weight: 600;
-  font-size: 18px;
-  text-decoration: none;
-  padding: 8px 14px;
-  border-radius: 6px;
-  transition: background 0.3s ease, transform 0.2s ease;
+/* ======== FOOTER CON ICONOS SVG ======== */
+#footer {
+  background-color: #119d47;
+  border-radius: 10px;
+  border: 3px solid #006633;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px 0;
 }
 
-#footer a:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: translateY(-2px);
+/* Íconos SVG */
+.social-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-
+.social-icon:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
