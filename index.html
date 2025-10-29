@@ -215,23 +215,31 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
    <script>
-      // Soluciona el cierre inmediato del dropdown de Bootstrap
-      $('.dropdown-menu a#grupo5').on('click', function (e) {
-         e.preventDefault();       // evita el salto de página
-         e.stopPropagation();      // evita que Bootstrap cierre antes de tiempo
+      // Esperar a que cargue el DOM
+      $(document).ready(function () {
+         // Detectar clic en el enlace del Grupo 5
+         $('.dropdown-menu a#grupo5').on('click', function (e) {
+            e.preventDefault();        // evita recarga
+            e.stopPropagation();       // evita cierre inmediato del menú
 
-         // Cierra manualmente el menú
-         $(this).closest('.dropdown.open').removeClass('open');
+            // Cierra manualmente el dropdown de Bootstrap
+            $(this).closest('.dropdown.open').removeClass('open');
 
-         // Muestra la tabla
-         $('#tablaGrupo').slideDown();
+            // Alternar visibilidad de la tabla
+            if ($('#tablaGrupo').is(':visible')) {
+               $('#tablaGrupo').slideUp(); // si está abierta, se cierra
+            } else {
+               $('#tablaGrupo').slideDown(); // si está oculta, se muestra
 
-         // Desplaza hacia la tabla
-         $('html, body').animate({
-            scrollTop: $('#tablaGrupo').offset().top - 100
-         }, 600);
+               // Desplazar hacia la tabla al abrir
+               $('html, body').animate({
+                  scrollTop: $('#tablaGrupo').offset().top - 100
+               }, 600);
+            }
+         });
       });
    </script>
+
 
 
 </body>
