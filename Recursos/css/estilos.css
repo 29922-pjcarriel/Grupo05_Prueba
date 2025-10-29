@@ -1,4 +1,9 @@
-/* Fuente moderna y elegante */
+/* ============================================
+   UNIVERSIDAD DE LAS FUERZAS ARMADAS - ESPE
+   Diseño institucional con Bootstrap 3
+   ============================================ */
+
+/* Fuente moderna */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 /* ======== General ======== */
@@ -22,11 +27,11 @@ body {
   color: #1b1b1b;
 }
 
-/* ======== Tipografía general ======== */
+/* ======== Tipografía ======== */
 h2 {
   text-align: center;
   margin-bottom: 25px;
-  color: #006633; /* verde ESPE */
+  color: #006633;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -65,9 +70,7 @@ p {
   transform: scale(0.98);
 }
 
-/* ======== Estructura principal con GRID ======== */
-
-/* Cajas generales */
+/* ======== Cajas generales ======== */
 .box {
   border-radius: 10px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
@@ -76,30 +79,34 @@ p {
   border: 3px solid transparent;
 }
 
-/* Variantes de color */
 .white {
   background: #ffffff;
   border-color: #e8fff3;
 }
+
 .soft-green {
   background: #eafaf0;
   border-color: #006633;
   color: #004d26;
 }
+
 .dark-green {
   background: #00331a;
   border-color: #004d26;
 }
+
 .green {
   background: #009639;
   border-color: #006633;
 }
+
 .green a {
   color: white;
   font-weight: 600;
   font-size: 18px;
   text-decoration: none;
 }
+
 .green a:hover {
   background: rgba(255, 255, 255, 0.25);
   border-radius: 6px;
@@ -122,7 +129,7 @@ p {
   max-width: 90%;
 }
 
-/* ======== NAVBAR (Bootstrap 3 inverso y responsivo gris) ======== */
+/* ======== NAVBAR ======== */
 #MenuBar {
   z-index: 10000;
   border-radius: 6px;
@@ -130,7 +137,7 @@ p {
   margin-bottom: 20px;
 }
 
-/* Fondo gris con degradado suave */
+/* Fondo gris degradado */
 #MenuBar.navbar-inverse {
   background: linear-gradient(to bottom, #3c3c3c, #1f1f1f);
   border: 1px solid #111;
@@ -158,22 +165,34 @@ p {
   transform: translateY(-1px);
 }
 
-/* Dropdown */
+/* === Dropdown === */
 #MenuBar .dropdown-menu {
   background-color: #fff !important;
   color: #000 !important;
   border-radius: 6px;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
   z-index: 10001;
+  padding: 0;
+}
+
+#MenuBar .dropdown-menu > li {
+  border-bottom: 1px solid rgba(0, 150, 57, 0.3); /* línea de separación verde suave */
+}
+
+#MenuBar .dropdown-menu > li:last-child {
+  border-bottom: none;
 }
 
 #MenuBar .dropdown-menu > li > a {
   color: #000 !important;
   font-weight: 500;
+  padding: 10px 18px;
+  transition: background 0.2s ease;
 }
 
 #MenuBar .dropdown-menu > li > a:hover {
-  background-color: #e6e6e6 !important;
+  background-color: #e8f5e9 !important;
+  color: #006633 !important;
 }
 
 /* Barra de búsqueda */
@@ -207,7 +226,7 @@ p {
   border-radius: 10px;
   border: 3px solid #cccccc;
   display: flex;
-   min-height: 340px; /* Puedes ajustar esta altura */
+  min-height: 340px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -223,24 +242,24 @@ p {
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
-   min-height: 340px; /* Puedes ajustar esta altura */
+  min-height: 340px;
   align-items: center;
   justify-content: center;
   gap: 8px;
   color: #004d26;
   text-align: center;
 }
+
 .container-fluid > .row {
   display: flex;
-  align-items: center;     /* Centra verticalmente los tres elementos */
-  justify-content: center; /* Centra horizontalmente en caso de espacio extra */
-  flex-wrap: wrap;         /* Permite que se adapte en pantallas pequeñas */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* ======== RIGHT MENU ======== */
-/* Contenedor del video */
+/* ======== RIGHT MENU (Video) ======== */
 #rightMenu {
   position: relative;
   background-color: #00331a;
@@ -256,11 +275,10 @@ p {
   padding: 0;
 }
 
-/* Ajuste del video */
 #rightMenu .video-container {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* mantiene proporción 16:9 */
+  padding-top: 56.25%;
   overflow: hidden;
 }
 
@@ -270,13 +288,11 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* hace que el video rellene sin franjas */
+  object-fit: cover;
   border: none;
 }
 
-
-
-/* ======== FOOTER CON ICONOS SVG ======== */
+/* ======== FOOTER ======== */
 #footer {
   background: linear-gradient(135deg, #009639, #006633);
   border-radius: 12px;
@@ -289,18 +305,17 @@ p {
   padding: 20px 0;
 }
 
-/* Íconos SVG */
+/* Íconos del footer */
 .social-icon {
   width: 42px;
   height: 42px;
-  background-color: #ffffff; /* fondo blanco */
+  background-color: #ffffff;
   border-radius: 50%;
   padding: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
-/* Hover animado */
 .social-icon:hover {
   transform: scale(1.2);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
