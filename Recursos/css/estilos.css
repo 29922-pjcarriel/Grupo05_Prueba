@@ -229,3 +229,14 @@ h2 {
   background: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
 }
+.dropdown-menu {
+  background-color: white !important;
+  color: black !important;
+  z-index: 9999 !important;
+}
+.dropdown-menu > li > a {
+  color: black !important;
+}
+.dropdown-menu > li > a:hover {
+  background-color: #e6e6e6 !important;
+}
